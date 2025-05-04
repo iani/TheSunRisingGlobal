@@ -20,6 +20,12 @@ Put it in your SC Extensions folder.
 
 ** BALC-lib (Buffers for the BALC framework)
 
+This contains the audio files for Vasili's patterns and sounds. Download it from here:
+
+https://github.com/iani/BALC-lib.git
+
+Put it in your SuperCollider Extensions dir (yes! sic!).
+
 ** The Sun Rising Iani Startup: Startup folder for user iani, with voice audio files
 
 Download it from here
