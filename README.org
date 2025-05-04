@@ -1,0 +1,11 @@
+#+title: Readme
+
+*Global instructions for The Sun Rising*
+
+* Repositories to clone (and where to put them)
+** BALC
+** sc-hacks-redux
+** BALC-lib
+* Other files to download (and where to put them)
+* Startup
+* Performance
