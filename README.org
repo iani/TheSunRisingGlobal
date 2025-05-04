@@ -3,9 +3,54 @@
 *Global instructions for The Sun Rising*
 
 * Repositories to clone (and where to put them)
-** BALC
-** sc-hacks-redux
-** BALC-lib
+** sc-hacks-redux (Networked LC Framework)
+
+The framework for networked live coding. Download it from here:
+
+https://github.com/iani/sc-hacks-redux.git
+
+Put it in your SC Extensions folder.
+
+** BALC (Framework for playing patterns by BA)
+Clone BALC library in version adapted for compatibility with sc-hacks-redux, from here:
+
+https://github.com/iani/BALC_IZ.git
+
+Put it in your SC Extensions folder.
+
+** BALC-lib (Buffers for the BALC framework)
+
+** The Sun Rising Iani Startup: Startup folder for user iani, with voice audio files
+
+Download it from here
+
+https://github.com/iani/TheSunRisingIaniStartup.git
+
+Put it in your SuperCollider User Application directory under Users/iani like this:
+
+#+begin_example
+/Users/iani/Library/Application Support/SuperCollider/Users/iani
+#+end_example
+
+This path is for MacOS. Find your own path by typing in supercollider:
+
+#+begin_src sclang
+Platform.userAppSupportDir;
+#+end_src
+
+and add to it the folders
+
+: /Users/iani
+
 * Other files to download (and where to put them)
 * Startup
+
+You should put in your startup file the following 3 lines:
+
+#+begin_example
+BALC.init;
+User.enable("the_sun_rising2", 5, \iani, \geodia, \vasilis, \kosmas, \penny);
+{ BALC.globalizeBufs } defer: 7;
+#+end_example
+
 * Performance
