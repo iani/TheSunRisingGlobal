@@ -6,3 +6,7 @@
 * Lookup table for string to match list in displayed ListView
 * Mechanism for loading synthdefs by all player members
 * All player members: send your synthefs as scd files!!!
+
+NOTE: pehaps review method Symbol:play / add methods
+or just polymorphise play to also accept synth arguments.
+playFunc, playDef, playEvt?
