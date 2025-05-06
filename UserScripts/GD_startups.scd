@@ -3,14 +3,9 @@ var typing;
 typing = {
 	var model, controller, tsr;
 	tsr = Document("The Sun Rising");
-	model = Ref(0);
-	controller = SimpleController(model);
-	controller.put(\value,
-		{|theChanger, what, moreArgs|
-			User.sendCode("Synth(\\shortclick)");
-			Synth(\shortclick);
-		});
-	tsr.keyDownAction = { arg ...args; model.value_(args[4]).changed(\value);  };
+	tsr.keyDownAction = { arg ...args;
+		User.sendCode(format("\\typing.changed(\\click, %)", args));
+	};
 };
 
 BALC.init;
