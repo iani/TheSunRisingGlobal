@@ -3,8 +3,10 @@ var typing;
 typing = {
 	var model, controller, tsr;
 	tsr = Document("The Sun Rising");
-	tsr.keyDownAction = { arg ...args;
-		User.sendCode(format("\\typing.changed(\\click, %)", args));
+	tsr.keyDownAction = { | sender, char |
+		User.sendCode(
+			format("\\typing.changed(\\click, %)", char.asCompileString)
+		);
 	};
 };
 
