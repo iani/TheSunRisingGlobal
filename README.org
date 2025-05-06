@@ -49,9 +49,16 @@ and add to it the folders
 : /Users/iani
 
 * Other files to download (and where to put them)
-* Startup
+* Startup File
 
 You should put in your startup file the following 3 lines:
+
+#+begin_src sclang
+BALC.init;
+User doAfterEnable: { BALC.globalizeBufs; };
+User.enable("the_sun_rising2", 5, \iani, \geodia, \vasilis, \kosmas, \penny);
+
+#+end_src
 
 #+begin_example
 BALC.init;

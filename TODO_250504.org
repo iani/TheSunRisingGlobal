@@ -1,11 +1,11 @@
 #+title: Todo 250504
 
 * Only emacs should open documents for User.
-* Fix broken switch between Symbol play Func and play Event
-* Open window to display ~verse when it is set global
-* Lookup table for string to match list in displayed ListView
 * Mechanism for loading synthdefs by all player members
+* Open window to display ~verse when it is set global
+* [GD:] Lookup table for string to match list in displayed ListView
 * All player members: send your synthefs as scd files!!!
+* Fix broken switch between Symbol play Func and play Event
 
 NOTE: pehaps review method Symbol:play / add methods
 or just polymorphise play to also accept synth arguments.
