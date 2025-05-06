@@ -4,6 +4,7 @@ typing = {
 	var model, controller, tsr;
 	tsr = Document("The Sun Rising");
 	tsr.keyDownAction = { | sender, char |
+		\typing.changed(\\click, char.asCompileString);
 		User.sendCode(
 			format("\\typing.changed(\\click, %)", char.asCompileString)
 		);
