@@ -55,15 +55,9 @@ You should put in your startup file the following 3 lines:
 
 #+begin_src sclang
 BALC.init;
-User doAfterEnable: { BALC.globalizeBufs; };
+User doAfterActivate: { BALC.globalizeBufs; };
 User.enable("the_sun_rising2", 5, \iani, \geodia, \vasilis, \kosmas, \penny);
-
+Server.default.boot;
 #+end_src
-
-#+begin_example
-BALC.init;
-User.enable("the_sun_rising2", 5, \iani, \geodia, \vasilis, \kosmas, \penny);
-{ BALC.globalizeBufs } defer: 7;
-#+end_example
 
 * Performance
