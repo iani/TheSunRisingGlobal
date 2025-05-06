@@ -1,7 +1,7 @@
 // Example of how to customize your reaction
 // to clicks received from Georgios.
 
-\mymusic.addNotifier(\typing, \click, { | n, char |
+\vamusic.addNotifier(\typing, \click, { | n, char |
 	char.postln;
 	char.ascii.postln;
 	// substitute the above with what you want to
@@ -22,6 +22,8 @@
 
 	{(midinote: char.ascii.abs.wrap(20, 100),
 		instrument: \default,
-		amp: 0.8
-	).play}.defer(0.5);
-})
+		amp: 0.2
+	).play}.defer(1.5);
+});
+//: Run this to deactivate/remove your reaction
+\izmusic.removeNotifier(\typing, \click);
