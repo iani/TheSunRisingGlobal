@@ -25,6 +25,24 @@ This contains the audio files for Vasili's patterns and sounds. Download it from
 https://github.com/iani/BALC-lib.git
 
 Put it in your SuperCollider Extensions dir (yes! sic!).
+** The present repository.
+
+https://github.com/iani/TheSunRisingIaniStartup.git
+
+Put the contents of the startup file contained here in your startup.scd document.
+
+.GlobalStartupFile/EnableUsersConfigureTSR.scd
+
+The contents are:
+
+#+begin_src sclang
+BALC.init;
+User doAfterActivate: {
+	BALC.globalizeBufs;
+	{ postln("\n\nThe user is: " + User.localId + "\n\n"); } ! 10;
+};
+User.enable("the_sun_rising2", 5, \iani, \geodia, \vasilis, \kosmas, \penny);
+#+end_src
 
 ** The Sun Rising Iani Startup: Startup folder for user iani, with voice audio files
 
