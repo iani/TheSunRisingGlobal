@@ -13,7 +13,7 @@
 BALC.init;
 User doAfterActivate: {
 	BALC.globalizeBufs;
-	{ postln("\n\nThe user is: " + User.localId + "\n\n"); } ! 10;
+	// { postln("\n\nThe user is: " + User.localId + "\n\n"); } ! 10;
 };
 // NOTE: Must delay at least 1 second for sclang to get the list
 // of existing scel documents. Otherwise it keeps creating
