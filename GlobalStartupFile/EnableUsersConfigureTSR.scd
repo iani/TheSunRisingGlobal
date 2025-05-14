@@ -12,7 +12,7 @@
 
 BALC.init;
 User doAfterActivate: {
-	BALC.globalizeBufs;
+	{ BALC.globalizeBufs; }.defer(6)
 	// { postln("\n\nThe user is: " + User.localId + "\n\n"); } ! 10;
 };
 // NOTE: Must delay at least 1 second for sclang to get the list
